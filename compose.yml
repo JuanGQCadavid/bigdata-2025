@@ -9,3 +9,4 @@ services:
       - "4040:4040" # Spark UI. Every new context is on an incremental port (4041, 4042, etc)
     volumes:
       - "./src/:/home/jovyan/" # map a local folder to the Jupyter workspace folder
+      - "./data:/home/jovyan/data"
